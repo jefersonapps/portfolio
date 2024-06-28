@@ -1,113 +1,147 @@
-import Image from "next/image";
+import { Github, Instagram, Mail } from "lucide-react";
+import { About } from "./components/about";
+import { Card } from "./components/card";
+import { Icon } from "./components/icon";
+import { Separator } from "./components/separator";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+    <div className="flex min-h-screen flex-col items-center py-14">
+      <main className="flex flex-col px-12 max-w-7xl gap-4">
+        <div className="flex flex-col-reverse justify-center items-center gap-12 md:flex-row md:items-start">
+          <div className="flex flex-col gap-4">
+            <h1 className="font-black text-6xl">Jeferson Leite</h1>
+
+            <About />
+
+            <p className="text-xl font-bold">Contato</p>
+
+            <div className="flex gap-2 text-xl">
+              <Icon href="https://www.instagram.com/jefersonlcn03?igsh=eTJnbDhneHgwZTAw">
+                <Instagram />
+              </Icon>
+              <Icon href="mailto:jefersonplaynunes@gmail.com">
+                <Mail />
+              </Icon>
+              <Icon href="https://github.com/jefersonapps">
+                <Github />
+              </Icon>
+            </div>
+          </div>
+
+          <div>
+            <img
+              src="https://github.com/jefersonapps.png"
+              alt="profile picture of Jeferson Leite"
+              className="rounded-full max-w-64"
             />
-          </a>
+          </div>
         </div>
-      </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <Separator />
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <section>
+          <h2 className="font-black text-4xl">Projetos Recentes</h2>
+          <br />
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <Card
+              title="3D Model Maker"
+              content="O 3D Model Maker é uma plataforma que permite ao usuário criar e visualizar objetos 3D interativos no navegador."
+              img="https://3dmodelmakerplatform.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffavicon.28c6f610.ico&w=48&q=75"
+              className="scale-[2]"
+              link="https://3dmodelmakerplatform.vercel.app/"
+              technologies={[
+                "React.js",
+                "TypeScript",
+                "Next",
+                "Tailwind",
+                "Python",
+              ]}
+            />
+            <Card
+              title="Task Organizer"
+              content="O TaskOrganizer é um aplicativo que ajuda você a organizar suas
+              atividades diárias."
+              img="https://raw.githubusercontent.com/jefersonapps/TaskOrganizer/main/src/assets/adaptive-icon.png"
+              className="scale-150"
+              github="https://github.com/jefersonapps/TaskOrganizer"
+              technologies={["React Native", "TypeScript"]}
+            />
+            <Card
+              title="Fast Latex"
+              content="O Fast Latex é um aplicativo desktop de código aberto para renderizar equações curtas ou alinhadas em LaTeX."
+              img="https://raw.githubusercontent.com/jefersonapps/fast-latex/main/public/icon.png"
+              className="invert dark:invert-0 scale-75"
+              github="https://github.com/jefersonapps/fast-latex"
+              link="https://github.com/jefersonapps/fast-latex/releases"
+              technologies={["HTML", "CSS", "JavaScript", "Electron"]}
+            />
+            <Card
+              title="Image OCR"
+              content="O Image OCR é um aplicativo de código aberto que permite extrair texto de imagens usando o reconhecimento óptico de caracteres (OCR)."
+              img="https://raw.githubusercontent.com/jefersonapps/image-ocr/main/public/icon.png"
+              className="invert dark:invert-0 scale-75"
+              github="https://github.com/jefersonapps/image-ocr"
+              technologies={["HTML", "CSS", "JavaScript", "Electron"]}
+            />
+            <Card
+              title="Image OCR Reader"
+              content="Este é um projeto que visa facilitar a extração do texto presente em imagens utilizando o tesseract.js."
+              className="scale-90"
+              img="https://raw.githubusercontent.com/jefersonapps/image-ocr-reader/main/src/app/favicon.ico"
+              github="https://github.com/jefersonapps/image-ocr-reader"
+              link="https://image-ocr-reader.vercel.app/"
+              technologies={["React.js", "TypeScript", "Next", "Tailwind"]}
+            />
+            <Card
+              title="Oblique Throw"
+              content="Este é um projeto desenvolvido em TypeScript e React que simula o lançamento de uma bolinha em um canhão. O usuário pode interagir com a simulação de diversas maneiras, alterando variáveis e observando os resultados."
+              img="https://raw.githubusercontent.com/jefersonapps/oblique-throw/main/public/icon.png"
+              className="scale-90"
+              github="https://github.com/jefersonapps/oblique-throw"
+              link="https://oblique-throw.netlify.app/"
+              technologies={["React.js", "TypeScript", "Vite", "Tailwind"]}
+            />
+            <Card
+              title="Remover Plano de Fundo"
+              content="Esta aplicação GUI, desenvolvida em Python com a biblioteca tkinter, permite remover o fundo de imagens de forma simples e rápida utilizando a biblioteca rembg."
+              img="https://raw.githubusercontent.com/jefersonapps/remove-background/main/assets/icon.png"
+              className="scale-90"
+              github="https://github.com/jefersonapps/remove-background"
+              link="https://github.com/jefersonapps/remove-background/releases/tag/v1.0"
+              technologies={["Python"]}
+            />
+            <Card
+              title="Operações com Matrizes"
+              content="Este projeto é uma ferramenta web que auxilia alunos a entender e praticar operações com matrizes, como soma, subtração e multiplicação."
+              img="https://raw.githubusercontent.com/jefersonapps/operacoescommatrizes/main/assets/matrix.png"
+              className="invert-0 dark:invert scale-75"
+              github="https://github.com/jefersonapps/operacoescommatrizes"
+              link="https://operacoescommatrizes.vercel.app/"
+              technologies={["HTML", "CSS", "JavaScript"]}
+            />
+            <Card
+              title="Text Inspector"
+              content="Text Inspector é uma ferramenta online que permite contar caracteres e palavras em um texto, além de extrair texto de arquivos PDF para contar o número de caracteres."
+              img="https://raw.githubusercontent.com/jefersonapps/charactere-counter/main/assets/logo.png"
+              className="scale-75"
+              github="https://github.com/jefersonapps/charactere-counter"
+              link="https://textinspector.netlify.app/"
+              technologies={["HTML", "CSS", "JavaScript"]}
+            />
+            <Card
+              title="Ábaco Online"
+              content="Este projeto é um ábaco interativo desenvolvido em HTML, CSS e JavaScript puro. O objetivo é fornecer uma ferramenta visual e interativa para aprender sobre o sistema decimal e realizar operações matemáticas básicas."
+              img="https://cdn-icons-png.flaticon.com/512/841/841540.png"
+              className="scale-75"
+              github="https://github.com/jefersonapps/abaco"
+              link="https://abaco-uepb-jeferson.netlify.app/"
+              technologies={["HTML", "CSS", "JavaScript"]}
+            />
+          </div>
+        </section>
+      </main>
+    </div>
   );
 }
