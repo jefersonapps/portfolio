@@ -3,7 +3,7 @@ import { Highlight } from "./highlight";
 
 export function About() {
   return (
-    <p className="text-xl leading-relaxed">
+    <p className="text-lg md:text-xl leading-relaxed">
       Sou um estudante de matemática que estuda programação para desenvolver
       softwares educacionais utilizando{" "}
       {technologies.map((tech, index) => (

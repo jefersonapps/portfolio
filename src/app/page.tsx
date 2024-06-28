@@ -7,10 +7,10 @@ import { Separator } from "./_components/separator";
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center py-14">
-      <main className="flex flex-col px-12 max-w-7xl gap-4">
+      <main className="flex flex-col px-6 max-w-7xl gap-4">
         <div className="flex flex-col-reverse justify-center items-center gap-12 md:flex-row md:items-start">
           <div className="flex flex-col gap-4">
-            <h1 className="font-black text-6xl">Jeferson Leite</h1>
+            <h1 className="font-black text-4xl md:text-6xl">Jeferson Leite</h1>
 
             <About />
 
@@ -41,7 +41,7 @@ export default function Home() {
         <Separator />
 
         <section>
-          <h2 className="font-black text-4xl">Projetos Recentes</h2>
+          <h2 className="font-black text-3xl md:text-4xl">Projetos Recentes</h2>
           <br />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
