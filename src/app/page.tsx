@@ -1,8 +1,8 @@
 import { Github, Instagram, Mail } from "lucide-react";
-import { About } from "./components/about";
-import { Card } from "./components/card";
-import { Icon } from "./components/icon";
-import { Separator } from "./components/separator";
+import { About } from "./_components/about";
+import { Card } from "./_components/card";
+import { Icon } from "./_components/icon";
+import { Separator } from "./_components/separator";
 
 export default function Home() {
   return (
