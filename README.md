@@ -2,6 +2,10 @@
 
 Este é o código-fonte do meu portfólio pessoal, construído com Next.js.
 
+<p align="center">
+  <img src="./src/app/favicon.ico" alt="ícone do portfólio" width="200"/>
+</p>
+
 ## Tecnologias Utilizadas
 
 - **Next.js:** Framework React para construção de aplicações web rápidas e escaláveis.
