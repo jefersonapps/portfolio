@@ -29,12 +29,11 @@ export function Card({
         <h3 className="font-black text-2xl">{title}</h3>
         <br />
         <div className="flex flex-col md:flex-row gap-4 items-center h-full">
-          <div className="flex items-center justify-center size-40 overflow-hidden">
-            <img
-              src={img}
-              alt={`ícone do app ${title}`}
-              className={className}
-            />
+          <div className="p-4 bg-black/40 rounded-3xl">
+            <div
+              className="flex items-center justify-center size-36 overflow-hidden bg-contain bg-no-repeat bg-center"
+              style={{ backgroundImage: `url(${img}` }}
+            ></div>
           </div>
 
           <div className="flex flex-1 flex-col justify-between h-full">
