@@ -18,7 +18,7 @@ export const projectsData: Project[] = [
       "O 3D Model Maker é uma plataforma que permite ao usuário criar e visualizar objetos 3D interativos no navegador.",
     img: "https://lh3.google.com/u/0/d/1AZoAe66qFS3x7LpCqm2ISrfWPsjOKTdg=w1920-h966-iv1",
     link: "https://3dmodelmakerplatform.vercel.app/",
-    technologies: ["React.js", "TypeScript", "Next", "Tailwind", "Python"],
+    technologies: ["React.js", "TypeScript", "Next", "Tailwind", "Three.js", "Python"],
   },
   {
     title: "Task Organizer",

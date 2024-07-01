@@ -11,6 +11,7 @@ export const technologies = [
   "Tailwind",
   "Electron",
   "Vite",
+  "Three.js"
 ] as const;
 
 export type Technology = (typeof technologies)[number];
@@ -28,6 +29,7 @@ const technologyColors: { [key in Technology]: string } = {
   Tailwind: "#3b82f6",
   Electron: "#4f46e5",
   Vite: "#5b21b6",
+  "Three.js": "#000000",
 };
 
 export function getTagColor(tech: Technology): string {
