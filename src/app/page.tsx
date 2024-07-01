@@ -42,7 +42,10 @@ export default function Home() {
         <Separator />
 
         <section>
-          <h2 className="font-black text-3xl md:text-4xl">Projetos Recentes</h2>
+          <h2 className="font-black text-3xl md:text-4xl">
+            Projetos Recentes{" "}
+            <span className="text-orange-600">({projectsData.length})</span>
+          </h2>
           <br />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

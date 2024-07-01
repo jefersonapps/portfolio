@@ -91,6 +91,15 @@ export const projectsData: Project[] = [
     technologies: ["React.js", "Vite", "Tailwind"],
   },
   {
+    title: "Monty Hall",
+    content:
+      "Este projeto é um simulador interativo do famoso problema de probabilidade, o Problema de Monty Hall. Ele permite que você visualize e entenda melhor este problema controverso.",
+    img: "https://github.com/jefersonapps/monty-hall/raw/main/assets/logo.webp",
+    github: "https://github.com/jefersonapps/monty-hall",
+    link: "https://simuladormontyhall.vercel.app/",
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
     title: "Text Inspector",
     content:
       "Text Inspector é uma ferramenta online que permite contar caracteres e palavras em um texto, além de extrair texto de arquivos PDF para contar o número de caracteres.",
