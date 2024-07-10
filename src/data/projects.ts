@@ -7,7 +7,7 @@ export interface Project {
   img: string;
   content: string;
   github?: string;
-  link?: string
+  link?: string;
   technologies: Technology[];
 }
 
@@ -18,7 +18,14 @@ export const projectsData: Project[] = [
       "O 3D Model Maker é uma plataforma que permite ao usuário criar e visualizar objetos 3D interativos no navegador.",
     img: "https://lh3.google.com/u/0/d/1AZoAe66qFS3x7LpCqm2ISrfWPsjOKTdg=w1920-h966-iv1",
     link: "https://3dmodelmakerplatform.vercel.app/",
-    technologies: ["React.js", "TypeScript", "Next", "Tailwind", "Three.js", "Python"],
+    technologies: [
+      "React.js",
+      "TypeScript",
+      "Next",
+      "Tailwind",
+      "Three.js",
+      "Python",
+    ],
   },
   {
     title: "Task Organizer",
@@ -27,6 +34,14 @@ export const projectsData: Project[] = [
     img: "https://raw.githubusercontent.com/jefersonapps/TaskOrganizer/main/src/assets/adaptive-icon.png",
     github: "https://github.com/jefersonapps/TaskOrganizer",
     technologies: ["React Native", "TypeScript"],
+  },
+  {
+    title: "Llama Chat",
+    content:
+      "Um aplicativo de desktop simples para interagir com grandes modelos de linguagem (LLMs) hospedados localmente usando a API Ollama.",
+    img: "https://raw.githubusercontent.com/jefersonapps/llama-chat/main/assets/llama-logo.png",
+    github: "https://github.com/jefersonapps/llama-chat",
+    technologies: ["HTML", "CSS", "JavaScript", "Electron"],
   },
   {
     title: "Fast Latex",
@@ -80,7 +95,7 @@ export const projectsData: Project[] = [
     github: "https://github.com/jefersonapps/operacoescommatrizes",
     link: "https://operacoescommatrizes.vercel.app/",
     technologies: ["HTML", "CSS", "JavaScript"],
-  }, 
+  },
   {
     title: "Marca Pontos",
     content:
