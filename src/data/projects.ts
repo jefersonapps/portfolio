@@ -41,6 +41,7 @@ export const projectsData: Project[] = [
       "Um aplicativo de desktop simples para interagir com grandes modelos de linguagem (LLMs) hospedados localmente usando a API Ollama.",
     img: "https://raw.githubusercontent.com/jefersonapps/llama-chat/main/assets/llama-logo.png",
     github: "https://github.com/jefersonapps/llama-chat",
+    link: "https://github.com/jefersonapps/llama-chat/releases",
     technologies: ["HTML", "CSS", "JavaScript", "Electron"],
   },
   {
