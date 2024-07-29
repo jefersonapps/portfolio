@@ -71,6 +71,15 @@ export const projectsData: Project[] = [
     technologies: ["React.js", "TypeScript", "Next", "Tailwind"],
   },
   {
+    title: "Image Color Picker",
+    content:
+      "O Image Color Picker é um aplicativo web que permite aos usuários extrair cores de áreas específicas ou paletas de cores de imagens.",
+    img: "https://raw.githubusercontent.com/jefersonapps/image-color-picker/main/public/icon.png",
+    github: "https://github.com/jefersonapps/image-color-picker/",
+    link: "https://pickimagecolor.vercel.app/",
+    technologies: ["React.js", "TypeScript", "Next", "Tailwind"],
+  },
+  {
     title: "Oblique Throw",
     content:
       "Este é um projeto desenvolvido em TypeScript e React que simula o lançamento de uma bolinha em um canhão. O usuário pode interagir com a simulação de diversas maneiras, alterando variáveis e observando os resultados.",
