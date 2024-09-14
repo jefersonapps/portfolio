@@ -28,7 +28,7 @@ export function Card({
       <div className="flex h-full flex-col justify-between">
         <h3 className="font-black text-2xl">{title}</h3>
         <br />
-        <div className="flex flex-col md:flex-row gap-4 items-center h-full">
+        <div className="flex flex-col md:flex-row gap-4 items-start h-full">
           <div className="p-4 bg-black/40 rounded-3xl">
             <div
               className="flex items-center justify-center size-36 overflow-hidden bg-contain bg-no-repeat bg-center"

@@ -1,6 +1,4 @@
-// src/data/projects.ts
-
-import { Technology } from "@/utils/helpers"; // Importe o tipo Technology (ajuste o caminho se necessário)
+import { Technology } from "@/utils/helpers";
 
 export interface Project {
   title: string;
@@ -13,11 +11,11 @@ export interface Project {
 
 export const projectsData: Project[] = [
   {
-    title: "3D Model Maker",
+    title: "Modela 3D",
     content:
-      "O 3D Model Maker é uma plataforma que permite ao usuário criar e visualizar objetos 3D interativos no navegador.",
-    img: "https://lh3.google.com/u/0/d/1AZoAe66qFS3x7LpCqm2ISrfWPsjOKTdg=w1920-h966-iv1",
-    link: "https://3dmodelmakerplatform.vercel.app/",
+      "O Modela3D é uma ferramenta que permite ao usuário criar e visualizar objetos 3D interativos no navegador. Você pode escrever comandos em JavaScript para criar esferas e cubos, além de aplicar animações e definir propriedades como cor, tamanho e posição dos objetos.",
+    img: "https://raw.githubusercontent.com/jefersonapps/modela3d-blog/main/src/app/favicon.ico",
+    link: "https://modela3d.vercel.app/",
     technologies: [
       "React.js",
       "TypeScript",
@@ -25,6 +23,23 @@ export const projectsData: Project[] = [
       "Tailwind",
       "Three.js",
       "Python",
+    ],
+  },
+  {
+    title: "Modela 3D | Blog",
+    content:
+      "O Modela 3D Blog é uma plataforma interativa onde usuários podem compartilhar suas experiências e conhecimentos relacionados ao mundo da modelagem 3D. Com um sistema de posts, curtidas, comentários e um editor Markdown intuitivo, o blog visa construir uma comunidade engajada e promover a troca de informações entre usuários do software Modela 3D.",
+    img: "https://raw.githubusercontent.com/jefersonapps/modela3d-blog/main/src/app/favicon.ico",
+    link: "https://modela3dblog.vercel.app/",
+    github: "https://github.com/jefersonapps/modela3d-blog",
+    technologies: [
+      "React.js",
+      "TypeScript",
+      "Next",
+      "Tailwind",
+      "Shadcn UI",
+      "Clerk",
+      "Tanstack Query",
     ],
   },
   {
