@@ -69,6 +69,21 @@ export const projectsData: Project[] = [
     technologies: ["HTML", "CSS", "JavaScript", "Electron"],
   },
   {
+    title: "Fast LaTeX 2",
+    content:
+      "O Fast LaTeX 2 é um aprimoramento do Fast LaTeX, com novas funcionalidades e melhorias, como um editor de código e uma interface mais intuitiva.",
+    img: "https://raw.githubusercontent.com/jefersonapps/fast-latex-2/main/resources/icon.png",
+    github: "https://github.com/jefersonapps/fast-latex-2",
+    link: "https://github.com/jefersonapps/fast-latex-2/releases",
+    technologies: [
+      "React.js",
+      "TypeScript",
+      "Tailwind",
+      "Electron",
+      "Radix UI",
+    ],
+  },
+  {
     title: "Image OCR",
     content:
       "O Image OCR é um aplicativo de código aberto que permite extrair texto de imagens usando o reconhecimento óptico de caracteres (OCR).",

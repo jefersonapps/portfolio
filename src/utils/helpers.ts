@@ -15,6 +15,7 @@ export const technologies = [
   "Shadcn UI",
   "Clerk",
   "Tanstack Query",
+  "Radix UI",
 ] as const;
 
 export type Technology = (typeof technologies)[number];
@@ -36,6 +37,7 @@ const technologyColors: { [key in Technology]: string } = {
   "Shadcn UI": "#000000",
   Clerk: "#000000",
   "Tanstack Query": "#E64F35",
+  "Radix UI": "#0c1b29",
 };
 
 export function getTagColor(tech: Technology): string {
