@@ -26,21 +26,39 @@ export const projectsData: Project[] = [
     ],
   },
   {
-    title: "Modela 3D | Blog",
+    title: "PDFsnap",
     content:
-      "O Modela 3D Blog é uma plataforma interativa onde usuários podem compartilhar suas experiências e conhecimentos relacionados ao mundo da modelagem 3D. Com um sistema de posts, curtidas, comentários e um editor Markdown intuitivo, o blog visa construir uma comunidade engajada e promover a troca de informações entre usuários do software Modela 3D.",
-    img: "https://raw.githubusercontent.com/jefersonapps/modela3d-blog/main/src/app/favicon.ico",
-    link: "https://modela3dblog.vercel.app/",
-    github: "https://github.com/jefersonapps/modela3d-blog",
-    technologies: [
-      "React.js",
-      "TypeScript",
-      "Next",
-      "Tailwind",
-      "Shadcn UI",
-      "Clerk",
-      "Tanstack Query",
-    ],
+      "PDFsnap é uma aplicação web dedicada a converter arquivos PDF em imagens de alta qualidade.",
+    img: "https://raw.githubusercontent.com/jefersonapps/pdf-snap/main/public/icon.png",
+    link: "https://pdf-snap.vercel.app/",
+    github: "https://github.com/jefersonapps/pdf-snap",
+    technologies: ["React.js", "TypeScript", "Vite", "Tailwind", "Shadcn UI"],
+  },
+  {
+    title: "Printify",
+    content: "Capture, personalize e compartilhe capturas de tela rapidamente.",
+    img: "https://raw.githubusercontent.com/jefersonapps/printify/main/resources/icon.png",
+    link: "https://github.com/jefersonapps/printify/releases",
+    github: "https://github.com/jefersonapps/printify",
+    technologies: ["Electron", "React.js", "TypeScript", "Vite"],
+  },
+  {
+    title: "Jogo da Tabuada",
+    content:
+      "Este é um jogo de tabuleiro 3D interativo, desenvolvido para tornar a prática da tabuada de multiplicação uma experiência divertida e visualmente atraente. Desafie um amigo, personalize as regras e teste seus conhecimentos matemáticos em um ambiente 3D dinâmico.",
+    img: "https://raw.githubusercontent.com/jefersonapps/jogodatabuada/main/public/icon.png",
+    link: "https://jogodatabuada.vercel.app/",
+    github: "https://github.com/jefersonapps/jogodatabuada",
+    technologies: ["React.js", "TypeScript", "Vite", "Three.js", "Tailwind"],
+  },
+  {
+    title: "Grid Print",
+    content:
+      "O Grid Print é uma aplicação web interativa projetada para simplificar a criação de documentos com layouts em grade. Seja para imprimir múltiplas imagens em uma única folha A4, organizar notas visuais ou criar cartões de estudo, esta ferramenta oferece um controle aprimorado sobre o resultado final.",
+    img: "https://raw.githubusercontent.com/jefersonapps/grid-print/main/public/app-icon.png",
+    link: "https://gridprint.vercel.app/",
+    github: "https://github.com/jefersonapps/grid-print",
+    technologies: ["React.js", "TypeScript", "Vite", "Tailwind"],
   },
   {
     title: "Task Organizer",
